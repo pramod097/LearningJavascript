@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--<h1>javascript can change image</h1>
+<img id="myImage" onclick="changeImage()" src="img/pic_bulboff.gif" width="100" height="180">
+<p>click on bulb to turn on/off the light</p>
+<p id="demo">Javascript can change style of html element</p>
+<script>
+function changeImage(){
+	var image=document.getElementById('myImage');
+	if (image.src.match("bulbon")) {
+		image.src="img/pic_bulboff.gif";
+	} else{
+		image.src="img/pic_bulbon.gif"
+	}
+}
+
+function myfunction() {
+	var x=document.getElementById("demo");
+	x.style.fontSize="25px";
+	x.style.color="red";
+}
+</script>
+<button type="button" onclick="myfunction()">click me!</button>
+</body>
+<body>
+	<p id="demo"></p>
+	<script>
+	function tocelsius(f) {
+		return (5/9)*(f-32);
+    }
+    document.getElementById("demo").innerHTML="The temperature is "+tocelsius(32)+" centigrade";
+    </script>-->
+      
+      
+      
+   <body>
+
+        <!--<p id="demo"></p>
+        <script>
+        function concatenate(first, last)
+        {
+        	var result;
+        	result=first+last;
+        	return result;
+        }
+        document.getElementById("demo").innerHTML=concatenate("Zara","Ali");
+        </script>
+
+        <button onclick="this.innerHTML=Date()">The time is? </button>
+        <script>
+        function displayDate() {
+        	document.getElementById("demo").innerHTML=Date();
+        }
+        </script>
+
+        <p id="demo"></p>-->
+
+
+       
+       <button onclick="myFunction()">Try it</button>
+
+       <p id="demo">Please Visit Microsoft!</p>
+       <p id="p2"></p>
+       
+
+       
+
+      <p id="p3">l;hjl;kjl;kjl;kjl;kjl;k</p>
+
+     
+      
+
+</body>
+<script>
+       function myFunction() {
+        var str=document.getElementById("demo").innerHTML;
+        var txt=str.replace("Microsoft","w3schools");
+        document.getElementById("demo").innerHTML=txt;
+       }
+
+       {
+        var str="Apple, Banana, Mango";
+        document.write(str.slice(7,13)+"<br>"+"<br>");
+      }
+
+
+      {
+        var txt1="Hello";
+        var txt2="World";
+        document.write(txt1.concat(" ",txt2)+"<br>"+"<br>");
+      }
+
+      {
+        var str="Hello World";
+        document.write(str.charCodeAt(0)+"<br>"+"<br>");
+      }
+
+      {
+        var str="Hello";
+        var arr=str.split("");
+        var text="";
+        var i;
+        for(i=0;i<arr.length;i++){
+          text+=arr[i]+"<br>"
+        }
+        document.write(text+"<br>"+"<br>");
+      } 
+
+      
+      {
+        var x=123;
+        document.write(x.toString()+"<br>"+(123).toString()+"<br>"+(100+23).toString()+"<br>");
+      }
+
+      {
+        document.write(Number(true)+"<br>"+Number(false)+"<br>"+Number(new Date)+"<br>"+Number("10 ")+"<br>"+Number(" 10")+"<br>"+Number("10 20")+"<br>"+"<br>");
+      }
+      {
+        document.write(new Date(99,5,24));
+      }
+
+      {
+        var d=new Date();
+        var days=["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"];
+        document.getElementById("p2").innerHTML=days[d.getDay()];
+      }
+
+      {
+        var d=new Date();
+        d.setDate(d.getDay()+50);
+        document.getElementById("p2").innerHTML=d;
+      }
+
+      {
+        var today, someday, text;
+        today=new Date();
+        someday=new Date();
+        someday.setFullYear(2100,0,14);
+        if(someday>today){
+          text="Today is before jan 14,2100";
+        }else {
+          text="Today is after jan14,2100";
+        }
+        document.getElementById("p2").innerHTML=text;
+      }
+
+
+      /*arrays*/
+
+      {
+      var names=["pramod","reshma","babloo"];
+      document.getElementById("p3").innerHTML=names[1];
+    }
+
+
+
+      
+      </script>
+</html>
